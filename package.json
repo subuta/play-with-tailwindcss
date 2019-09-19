@@ -1,0 +1,29 @@
+{
+  "name": "play-with-tailwindcss",
+  "version": "1.0.0",
+  "description": "Tailwind CSS tutorial.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "poi src/index.js",
+    "dev": "poi src/index.js -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subuta/play-with-tailwindcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/subuta/play-with-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/subuta/play-with-tailwindcss#readme",
+  "devDependencies": {
+    "poi": "^12.7.2"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "tailwindcss": "^1.1.2"
+  }
+}
