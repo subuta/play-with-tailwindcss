@@ -4,8 +4,12 @@
   "description": "Tailwind CSS tutorial.",
   "main": "src/index.js",
   "scripts": {
-    "build": "poi src/index.js",
-    "dev": "poi src/index.js -s"
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html",
+    "start": "cd ./dist && serve",
+    "storybook-dev": "parcel .storybook/storybook.html --port 1337",
+    "storybook": "start-storybook --preview-url=http://localhost:1337/iframe.html",
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -17,11 +21,27 @@
   "bugs": {
     "url": "https://github.com/subuta/play-with-tailwindcss/issues"
   },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "alias": {
+    "src": "./src"
+  },
   "homepage": "https://github.com/subuta/play-with-tailwindcss#readme",
   "devDependencies": {
-    "poi": "^12.7.2"
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "parcel": "^1.12.3",
+    "postcss-modules": "^1.4.1",
+    "serve": "^11.1.0",
+    "standard": "^14.3.1"
   },
   "dependencies": {
+    "components": "^0.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "tailwindcss": "^1.1.2"
