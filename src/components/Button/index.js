@@ -1,10 +1,23 @@
 import React from 'react'
+import _ from 'lodash'
 
-import styles from './index.css'
+import styles from './index.pcss'
 
-export default ({ children, onClick }) => (
-  <button className={styles.button} onClick={onClick}>
-    h1
-    {children}
-  </button>
-)
+export default (props) => {
+  const {
+    children,
+    onClick = _.noop,
+    ghost = false
+  } = props
+
+  let buttonClass = styles.filledButton
+  if (ghost) {
+    buttonClass = styles.ghostButton
+  }
+
+  return (
+    <button className={buttonClass} onClick={onClick}>
+      {children}
+    </button>
+  )
+}

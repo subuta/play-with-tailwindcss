@@ -3,9 +3,10 @@ module.exports = {
   plugins: {
     'postcss-modules': {
       globalModulePaths: [
-        'app.css'
+        'app.pcss'
       ]
     },
-    'tailwindcss': true
+    'tailwindcss': true,
+    'postcss-nested': true
   }
 }

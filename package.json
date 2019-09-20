@@ -7,8 +7,9 @@
     "build": "parcel build src/index.html",
     "dev": "parcel src/index.html",
     "start": "cd ./dist && serve",
-    "storybook-dev": "parcel .storybook/storybook.html --port 1337",
-    "storybook": "start-storybook --preview-url=http://localhost:1337/iframe.html",
+    "storybook:dev": "parcel .storybook/storybook.html --port 1337",
+    "storybook:start": "start-storybook --preview-url=http://localhost:1337/iframe.html",
+    "storybook": "run-p storybook:dev storybook:start",
     "lint": "standard --fix"
   },
   "repository": {
@@ -35,15 +36,21 @@
     "@storybook/react": "^5.2.1",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "npm-run-all": "^4.1.5",
     "parcel": "^1.12.3",
     "postcss-modules": "^1.4.1",
+    "postcss-nested": "^4.1.2",
     "serve": "^11.1.0",
     "standard": "^14.3.1"
   },
   "dependencies": {
     "components": "^0.1.0",
+    "lodash": "^4.17.15",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-icons": "^3.7.0",
+    "react-powerplug": "^1.0.0",
+    "recompose": "^0.30.0",
     "tailwindcss": "^1.1.2"
   }
 }
