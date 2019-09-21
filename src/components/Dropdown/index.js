@@ -10,10 +10,10 @@ export default (props) => {
   const {
     onSelect = _.noop,
     choices = [],
-    children,
+    children
   } = props
 
-  let dropdownClass = styles.dropdown
+  const dropdownClass = styles.dropdown
 
   return (
     <Toggle initial={false}>

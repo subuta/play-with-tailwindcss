@@ -19,7 +19,10 @@ storiesOf('Dropdown', module)
         click me!
       </Dropdown>
 
-      <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consectetur corporis est exercitationem iure laborum, libero maiores maxime nisi perferendis quae quisquam rem reprehenderit rerum sint totam unde voluptatibus.</p>
+      <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consectetur
+        corporis est exercitationem iure laborum, libero maiores maxime nisi perferendis quae quisquam rem reprehenderit
+        rerum sint totam unde voluptatibus.
+      </p>
     </>
   ))
   .add('selection', () => (
@@ -37,7 +40,10 @@ storiesOf('Dropdown', module)
             {value}
           </Dropdown>
 
-          <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consectetur corporis est exercitationem iure laborum, libero maiores maxime nisi perferendis quae quisquam rem reprehenderit rerum sint totam unde voluptatibus.</p>
+          <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consectetur
+            corporis est exercitationem iure laborum, libero maiores maxime nisi perferendis quae quisquam rem
+            reprehenderit rerum sint totam unde voluptatibus.
+          </p>
         </>
       )}
     </Value>

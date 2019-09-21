@@ -1,0 +1,52 @@
+.modalWrapper {
+  @apply fixed inset-0 flex items-center justify-center h-screen;
+}
+
+.modal {
+  @apply inline-block relative;
+
+  :global(.modal-fade-in-enter) & {
+    transform: translate3d(0, 30%, 0);
+  }
+
+  :global(.modal-fade-in-enter-active) & {
+    transform: translate3d(0, 0%, 0);
+    transition: transform 300ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  :global(.modal-fade-in-exit) & {
+    transform: translate3d(0, 0%, 0);
+    opacity: 1;
+  }
+
+  :global(.modal-fade-in-exit-active) & {
+    transform: translate3d(0, 30%, 0);
+    opacity: 0;
+    transition: transform 300ms cubic-bezier(0.4, 0, 1, 1),
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.backdrop {
+  @apply absolute inset-0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  :global(.modal-fade-in-enter) & {
+    opacity: 0;
+  }
+
+  :global(.modal-fade-in-enter-active) & {
+    opacity: 1;
+    transition: opacity 200ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  :global(.modal-fade-in-exit) & {
+    opacity: 1;
+  }
+
+  :global(.modal-fade-in-exit-active) & {
+    opacity: 0;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 1, 1);
+  }
+}

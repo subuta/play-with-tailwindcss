@@ -6,7 +6,7 @@ module.exports = {
         'app.pcss'
       ]
     },
-    'tailwindcss': true,
+    tailwindcss: true,
     'postcss-nested': true
   }
 }
