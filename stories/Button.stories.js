@@ -6,8 +6,8 @@ import Button from 'src/components/Button'
 
 storiesOf('Button', module)
   .add('normal', () => (
-    <Button>Hello Button</Button>
+    <Button onClick={() => console.log('clicked!')}>Hello Button</Button>
   ))
   .add('ghost', () => (
-    <Button ghost>Hello Button</Button>
+    <Button onClick={() => console.log('clicked!')} ghost>Hello Button</Button>
   ))
