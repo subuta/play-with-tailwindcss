@@ -33,15 +33,15 @@
     "@storybook/addon-actions": "^5.2.1",
     "@storybook/addon-links": "^5.2.1",
     "@storybook/addons": "^5.2.1",
-    "@storybook/react": "^5.2.1",
+    "@storybook/react": "^10.0.7",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "npm-run-all": "^4.1.5",
-    "parcel": "^1.12.3",
+    "parcel": "^2.16.1",
     "postcss-modules": "^1.4.1",
     "postcss-nested": "^4.1.2",
     "serve": "^11.1.0",
-    "standard": "^14.3.1"
+    "standard": "^17.1.2"
   },
   "dependencies": {
     "components": "^0.1.0",
